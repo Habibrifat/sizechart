@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .size-bg {
+    @apply bg-white p-5 my-5 flex flex-col border-[thin] border-solid rounded-md border-[rgba(0,0,0,0.12)] shadow-[0_3px_5px_-1px_rgba(0,0,0,0.2),0_5px_8px_0_rgba(0,0,0,0.14),0_1px_14px_0_rgba(0,0,0,0.12)];
+  }
+  .button {
+    @apply inline-block border py-2 px-3 me-5 my-5 border-black hover:bg-[#EDEDED] rounded-3xl transition-all duration-300;
+  }
+  .input-field {
+    @apply text-base text-black placeholder:text-base placeholder:text-black border-b border-solid border-black outline-none py-1 focus:border-b-[#F1B24A];
+  }
+  .conversion-popup {
+    @apply rounded p-5 shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),0_2px_2px_0_rgba(0,0,0,0.14),0_1px_5px_0_rgba(0,0,0,0.12)] bg-[rgb(238,238,238)] border-[rgb(238,238,238)];
+  }
+}
