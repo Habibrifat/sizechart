@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaEdit } from "react-icons/fa";
-import Table from "./table";
+import Measurement from "./components/Measurement ";
+import Table from "./components/tableData";
 
 const SizeChart = () => {
   const options = [
@@ -85,7 +86,8 @@ const SizeChart = () => {
           value={header}
           onChange={handleChangeHeder}
         />
-        <div className="table">
+        <div className="table m-auto py-5">
+          {/* <Table /> */}
           <Table />
         </div>
         <input
@@ -95,6 +97,7 @@ const SizeChart = () => {
           value={header}
           onChange={handleChangeHeder}
         />
+        {/* Select and Checkbox */}
         <div className="grid grid-cols-2 gap-4">
           <div className="conversion-popup bg-[#EEEEEE]">
             <h2 className=" text-xl font-medium pt-2 pb-5">
@@ -154,6 +157,10 @@ const SizeChart = () => {
             </div>
           </div>
         </div>
+      </div>
+      {/* Measurement */}
+      <div className="measurement">
+        <Measurement />
       </div>
     </div>
   );
