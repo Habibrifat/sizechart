@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaEdit } from "react-icons/fa";
 import Measurement from "./components/Measurement ";
-import Table from "./components/tableData";
+import Table from "./components/tableRow";
 
 const SizeChart = () => {
   const options = [
@@ -40,9 +40,6 @@ const SizeChart = () => {
     setHeader(e.target.value);
     console.log(e.target.value);
   };
-  // const handleChangeButtonFocus = (e) => {
-  //   setIsFocusedButton(true);
-  // };
   const handleChangeOption = (event) => {
     setSelectedOption(event.target.value);
   };
