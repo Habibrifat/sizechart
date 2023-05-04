@@ -37,6 +37,7 @@ function Table() {
                   )}
                 </th>
               ))}
+              {/* Add Column */}
               <th className="px-4 py-2 sticky right-0 bg-white z-50">
                 <button
                   className="add-btn"
@@ -45,14 +46,6 @@ function Table() {
                   AddColumn
                 </button>
               </th>
-              {/* <div>
-                <button
-                  className="add-btn sticky right-0 bg-white z-50"
-                  onClick={() => setColCount(colCount + 1)}
-                >
-                  AddColumn
-                </button>
-              </div> */}
             </tr>
           </thead>
           <tbody className="bg-white divide-y divide-gray-200">
@@ -94,6 +87,7 @@ function Table() {
                     </td> */}
               </tr>
             ))}
+            {/* add row */}
             <div className="my-4 sticky left-0 z-50">
               <button
                 className="add-btn ms-6"
@@ -104,14 +98,6 @@ function Table() {
             </div>
           </tbody>
         </div>
-        {/* <div className="my-4 ms-5">
-          <button
-            className="add-btn sticky left-0 z-50"
-            onClick={() => setRowCount(rowCount + 1)}
-          >
-            Add Row
-          </button>
-        </div> */}
       </div>
     </>
   );
