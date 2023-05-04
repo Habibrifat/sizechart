@@ -8,10 +8,11 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Routes>
-          <Route path="/" element={<SizeChart />} />
+          {/* <Route path="/" element={<SizeChart />} /> */}
           {/* <Route path="/size-chart" element={<SizeChart />} /> */}
           <Route path="/plans" element={<Plans />} />
-          <Route path="/help" element={<Help />} />
+          {/* <Route path="/help" element={<Help />} /> */}
+          <Route path="/" element={<Help />} />
         </Routes>
       </div>
     </BrowserRouter>
