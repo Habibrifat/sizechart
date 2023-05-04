@@ -16,7 +16,10 @@
     @apply rounded p-5 shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),0_2px_2px_0_rgba(0,0,0,0.14),0_1px_5px_0_rgba(0,0,0,0.12)] bg-[rgb(238,238,238)] border-[rgb(238,238,238)];
   }
   .col-input {
-    @apply outline-none border-2 border-solid rounded border-[#cfc5c5f5] shadow-2xl mx-2 w-4/5 px-2 text-center text-black placeholder:text-black;
+    @apply outline-none border-2 border-solid rounded border-[#cfc5c5f5] shadow-2xl mx-2 w-[70%] px-2 text-center text-black placeholder:text-black;
+  }
+  .row-input {
+    @apply outline-none border-2 border-solid rounded border-[#cfc5c5f5] shadow-2xl mx-2 px-2 text-center text-black placeholder:text-black;
   }
   .x-btn {
     @apply font-medium px-2 py-1 bg-[#26c6da] hover:bg-[#23B8CA] text-white rounded transition-all duration-300;
