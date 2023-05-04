@@ -57,14 +57,14 @@ const Measurement = () => {
     <>
       <div className="size-bg">
         <h2 className="text-xl font-bold py-3">Measurement Instructions </h2>
-        <div className="measurement-btn">
-          <button className="button px-8">
+        <div className="measurement-btn my-4">
+          <button className="size-button px-8 max-[580px]:px-4">
             Image library
-            <FaCamera className="inline text-xl ms-4" />
+            <FaCamera className="inline text-xl max-[580px]:text-sm ms-4" />
           </button>
-          <button className="button px-8">
+          <button className="size-button px-8 max-[580px]:px-4">
             How to...
-            <FaEdit className="inline text-xl ms-4" />
+            <FaEdit className="inline text-xl max-[580px]:text-sm ms-4" />
           </button>
         </div>
         <div className="editor border-solid border border-[#DEE0E2] h-96 ">

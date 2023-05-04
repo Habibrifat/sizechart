@@ -8,15 +8,6 @@ function Table() {
 
   return (
     <>
-      {/* <div className="flex-col overflow-x-auto overflow-hidden">
-        <div className="-my-2 sm:-mx-6 lg:-mx-8">
-          <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-            <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
-              <div className="table-auto m-auto min-w-full divide-y divide-gray-200 overflow-x-auto"></div>
-            </div>
-          </div>
-        </div>
-      </div> */}
       <div className="overflow-x-auto">
         <div className="">
           <thead className="bg-gray-50">
@@ -46,14 +37,22 @@ function Table() {
                   )}
                 </th>
               ))}
-              <div>
+              <th className="px-4 py-2 sticky right-0 bg-white z-50">
                 <button
-                  className="add-btn sticky right-10 z-50"
+                  className="add-btn"
                   onClick={() => setColCount(colCount + 1)}
                 >
                   AddColumn
                 </button>
-              </div>
+              </th>
+              {/* <div>
+                <button
+                  className="add-btn sticky right-0 bg-white z-50"
+                  onClick={() => setColCount(colCount + 1)}
+                >
+                  AddColumn
+                </button>
+              </div> */}
             </tr>
           </thead>
           <tbody className="bg-white divide-y divide-gray-200">
@@ -95,16 +94,24 @@ function Table() {
                     </td> */}
               </tr>
             ))}
+            <div className="my-4 sticky left-0 z-50">
+              <button
+                className="add-btn ms-6"
+                onClick={() => setRowCount(rowCount + 1)}
+              >
+                Add Row
+              </button>
+            </div>
           </tbody>
         </div>
-        <div className="my-4 ms-5">
+        {/* <div className="my-4 ms-5">
           <button
             className="add-btn sticky left-0 z-50"
             onClick={() => setRowCount(rowCount + 1)}
           >
             Add Row
           </button>
-        </div>
+        </div> */}
       </div>
     </>
   );

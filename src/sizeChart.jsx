@@ -45,7 +45,7 @@ const SizeChart = () => {
   };
 
   return (
-    <div className=" bg-[#F3F5F7] p-10">
+    <div className=" bg-[#F3F5F7] p-10 ">
       <div className="size-bg size-name">
         <label className="text-xl font-bold py-3">Select a Name</label>
         <input
@@ -65,15 +65,15 @@ const SizeChart = () => {
       <div className="size-chart size-bg">
         <label className="text-xl font-bold py-3">Size Chart </label>
         <div className="buttons">
-          <button className="button">How to Copy data from excel</button>
-          <button className="button"> cm / inches Conversion</button>
-          <button className="button">
+          <button className="size-button">How to Copy data from excel</button>
+          <button className="size-button"> cm / inches Conversion</button>
+          <button className="size-button">
             <span className=" text-red-600">Tip:</span> Exclude Conversion from
             column
           </button>
-          <button className="button px-8">
+          <button className="size-button px-8 max-[580px]:px-4">
             How to...
-            <FaEdit className="inline text-xl ms-4" />
+            <FaEdit className="inline text-xl max-[580px]:text-sm ms-4" />
           </button>
         </div>
         <input
@@ -84,7 +84,6 @@ const SizeChart = () => {
           onChange={handleChangeHeder}
         />
         <div className="py-5">
-          {/* <Table /> */}
           <Table />
         </div>
         <input
@@ -95,9 +94,9 @@ const SizeChart = () => {
           onChange={handleChangeHeder}
         />
         {/* Select and Checkbox */}
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-4 my-8 max-[767px]:grid-cols-1">
           <div className="conversion-popup bg-[#EEEEEE]">
-            <h2 className=" text-xl font-medium pt-2 pb-5">
+            <h2 className=" text-xl  font-medium pt-2 pb-5 ">
               Conversion cm / inches
             </h2>
             <label htmlFor="conversion" className="text-sm pl-5">
@@ -105,7 +104,7 @@ const SizeChart = () => {
             </label>
             <div className="select">
               <select
-                className=" py-2 px-4 mr-4 border-b border-black w-1/2"
+                className=" py-2 px-4 mr-4 border-b border-black w-1/2 max-[580px]:w-full max-[580px]:my-5"
                 name="conversion"
                 id="conversion"
                 value={selectedOption}
@@ -136,7 +135,7 @@ const SizeChart = () => {
             <div>
               {options.map((option) => (
                 <label
-                  className=" text-xl text-gray-500"
+                  className=" text-xl max-[580px]:text-base  text-gray-500"
                   htmlFor={option.value}
                   key={option.value}
                 >
