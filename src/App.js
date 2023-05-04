@@ -9,6 +9,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<SizeChart />} />
+          {/* <Route path="/size-chart" element={<SizeChart />} /> */}
           <Route path="/plans" element={<Plans />} />
           <Route path="/help" element={<Help />} />
         </Routes>
