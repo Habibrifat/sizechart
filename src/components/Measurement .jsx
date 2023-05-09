@@ -13,6 +13,16 @@ import Text from "./text";
 import htmlToDraft from "html-to-draftjs";
 // const LOCAL_STORAGE_KEY = "measurement-content";
 const Measurement = () => {
+  const [jsonData, setJsonData] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch("https://dummyjson.com/products/1");
+      const data = await response.json();
+      setJsonData(data);
+    };
+    fetchData();
+  }, []);
   // const [editorState, setEditorState] = useState(EditorState.createEmpty());
   // const [editorState, setEditorState] = useState(() => {
   //   // const savedContent = localStorage.getItem(LOCAL_STORAGE_KEY);
@@ -30,7 +40,7 @@ const Measurement = () => {
   // }, [editorState]);
 
   const [editorState, setEditorState] = useState(EditorState.createEmpty());
-  const savedContent = "<p>Hello hi rifat</p>"; // assume this is fetched from a database
+  const savedContent = "<><p>Hello hi rifat</p>"; // assume this is fetched from a database
 
   useEffect(() => {
     if (savedContent) {
@@ -55,7 +65,7 @@ const Measurement = () => {
   };
   return (
     <>
-      <div className="size-bg">
+      <div className="size-bg overflow-x-auto">
         <h2 className="text-xl font-bold py-3">Measurement Instructions </h2>
         <div className="measurement-btn my-4">
           <button className="size-button px-8 max-[580px]:px-4">
@@ -75,6 +85,13 @@ const Measurement = () => {
 
           {/* <Text /> */}
           {/* <button onClick={handleSave}>Save</button> */}
+          {/* display JSON data */}
+          {jsonData && (
+            <div className="my-4">
+              {/* <JsonDisplay jsonData={jsonData} /> */}
+              <p>{JSON.stringify(jsonData)}</p>
+            </div>
+          )}
         </div>
         <button onClick={handleSave}>Save</button>
       </div>

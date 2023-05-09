@@ -83,6 +83,7 @@ const SizeChart = () => {
           value={header}
           onChange={handleChangeHeder}
         />
+        {/* table */}
         <div className="py-5">
           <Table />
         </div>

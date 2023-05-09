@@ -27,4 +27,29 @@
   .add-btn {
     @apply p-2 bg-white text-[#EE7768] border border-solid border-[#EE7768] rounded text-sm;
   }
+  .react-tabs__tab--selected {
+    @apply bg-red-600 border-[#aaa] py-2 px-16 rounded-lg text-black;
+  }
+}
+.react-tabs__tab {
+  border: none !important;
+  padding: 6px 24px !important;
+  bottom: 0 !important;
+}
+.react-tabs__tab--selected {
+  background: #fff;
+  border: none !important;
+  padding: 0.2rem 4rem !important;
+  color: black;
+  border-radius: 4px !important;
+}
+
+/* the slides */
+.slick-slide {
+  margin: 0 10px;
+  /* margin-left: 10px; */
+}
+/* the parent */
+.slick-list {
+  /* margin: 0 -10px; */
 }
