@@ -11,8 +11,8 @@ const Sidebar = () => {
         <div className="sidebar-logo px-8 py-2">
           <h2 className=" text-2xl">Smart Size</h2>
         </div>
-        <NavLink to={"/dashboard"} className="sidebar-nav-link">
-          <div className="link-one py-1 px-4 hover:bg-[#D7D7D7] cursor-pointer transition-all ">
+        <NavLink to={"/"} className="sidebar-nav-link">
+          <div className="py-1 px-4 hover:bg-[#D7D7D7] cursor-pointer transition-all ">
             <p className="text-base">
               <span className="inline-block px-4">
                 <FaHome />
@@ -22,7 +22,7 @@ const Sidebar = () => {
           </div>
           <NavLink
             to={"/new-size-chart"}
-            className="link-one py-1 px-4 hover:bg-[#D7D7D7] cursor-pointer transition-all"
+            className="py-1 px-4 hover:bg-[#D7D7D7] cursor-pointer transition-all"
           >
             <p className=" text-base">
               <span className="inline-block px-4">

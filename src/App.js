@@ -19,7 +19,7 @@ function App() {
           {/* <Route path="/" element={<SizeChart />} /> */}
 
           <Route path="/" element={<Layout />}>
-            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/" element={<Dashboard />} />
             <Route path="/size-chart" element={<SizeChart />} />
             <Route path="/new-size-chart" element={<NewSizeChart />} />
             <Route path="/plans" element={<Plans />} />
